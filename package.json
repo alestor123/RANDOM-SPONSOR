@@ -22,6 +22,10 @@
     "type": "git",
     "url": "git+https://github.com/alestor123/RANDOM-SPONSOR.git"
   },
+  "bin": {
+    "random-sponsor": "cli.js"
+  },
+
   "keywords": [
     "github",
     "nodejs",
@@ -37,6 +41,7 @@
   },
   "homepage": "https://github.com/alestor123/RANDOM-SPONSOR#readme",
   "dependencies": {
+    "chalk": "^4.1.1",
     "x-ray": "^2.3.4"
   },
   "devDependencies": {
