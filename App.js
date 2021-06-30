@@ -10,7 +10,7 @@ module.exports = async (username, pgrange) => {
 }
 async function getSponsors (username, page) {
   const data = await xray(`https://github.com/sponsors/${username}/sponsors_partial?page=${page}`, 'img', [{
-    title: '@src',
+    avatar: '@src',
     username: '@alt'
   }])
   data.forEach(user => { user.username = user.username.substring(1) })
